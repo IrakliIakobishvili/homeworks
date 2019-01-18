@@ -3,7 +3,7 @@ console.log('Hello, world!');
 
 
 function createFunction() {
-	function sub() {
+  function sub() {
     console.log('hello');
   }
   return sub;
@@ -15,7 +15,7 @@ function1();
 
 
 function createFunctionPrinter(input) {
-	function sub() {
+  function sub() {
     console.log(input);
   }
   return sub;
