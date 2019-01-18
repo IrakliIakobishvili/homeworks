@@ -84,8 +84,8 @@ sandra.introduce(); // -> Logs 'Hi, my name is Sandra'
 /*** CHALLENGE 1 of 3 ***/
 
 function PersonConstructor() {
-	// add code here
-	this.greet = function() {
+  // add code here
+  this.greet = function() {
     console.log('hello')
   }
 }
@@ -100,8 +100,8 @@ simon.greet(); // -> Logs 'hello'
 /*** CHALLENGE 2 of 3 ***/
 
 function personFromConstructor(name, age) {
-	// add code here
-	  this.name = name;
+    // add code here
+    this.name = name;
     this.age = age;
     this.greet = function() {
     console.log('hello');
@@ -134,14 +134,13 @@ mike.introduce(); // -> Logs 'Hi, my name is Mike'
 /*** CHALLENGE 1 of 3 ***/
 
 class PersonClass {
-	constructor(name) {
+  constructor(name) {
     // add code here
       this.name = name;
       this.greet = function() {
       console.log('hello')
      }
-	}
-	// add code here
+  }	// add code here
 }
 
 
@@ -158,8 +157,8 @@ class DeveloperClass extends PersonClass {
   constructor(name,greet) {
     super(name,greet);
     this.introduce = function() {
-  		console.log('Hello World, my name is '+name)
-		}
+  	console.log('Hello World, my name is '+name)
+    }
   }
 }
 
