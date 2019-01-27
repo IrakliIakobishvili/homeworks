@@ -41,7 +41,7 @@
 <script>
     let i = 10;
     let addContent = () => {
-        if(window.scrollY+window.innerHeight >= body.getBoundingClientRect().height+20) { //20px = margin-top + margin-bottom 
+        if(window.scrollY+window.innerHeight == body.getBoundingClientRect().height+20) { //20px = margin-top + margin-bottom 
             let div = document.createElement('div');
             div.classList.add('box');
 	    div.innerText = ++i;
