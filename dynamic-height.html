@@ -10,19 +10,19 @@
     * {
         margin: 0px;
         padding: 0px;
-	box-sizing:border-box;
+	    box-sizing:border-box;
     }
     .box {
         width: 50%;
         height: 200px;
         margin: 10px auto;
         background-color: orange;
-	display:flex;
-	align-items:center;
-	justify-content:center;
-	font-size:40px;
-	color:white;
-	font-family:verdana;
+	    display:flex;
+	    align-items:center;
+	    justify-content:center;
+	    font-size:40px;
+	    color:white;
+	    font-family:verdana;
     }
 </style>
 </head>
@@ -45,7 +45,7 @@
         if(window.scrollY+window.innerHeight == body.getBoundingClientRect().height+20) { //20px = margin-top + margin-bottom 
             let div = document.createElement('div');
             div.classList.add('box');
-	    div.innerText = ++i;
+	        div.innerText = ++i;
             body.appendChild(div);
         }
     }
