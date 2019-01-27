@@ -16,27 +16,35 @@
         height: 200px;
         margin: 10px auto;
         background-color: orange;
+		display:flex;
+		align-items:center;
+		justify-content:center;
+		font-size:40px;
+		color:white;
+		font-family:verdana;
     }
 </style>
 </head>
 <body id='body'>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div> 
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
-    <div class="box"></div>
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div> 
+    <div class="box">6</div>
+    <div class="box">7</div>
+    <div class="box">8</div>
+    <div class="box">9</div>
+    <div class="box">10</div>
 </body>
 </html>
 <script>
+    let i = 10;
     let addContent = () => {
         if(window.scrollY+window.innerHeight == body.getBoundingClientRect().height+20) { //20px = margin-top + margin-bottom 
             let div = document.createElement('div');
             div.classList.add('box');
+			div.innerText = ++i;
             body.appendChild(div);
         }
     }
