@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+		box-sizing:border-box;
+    }
+    .box {
+        width: 50%;
+        height: 200px;
+        margin: 10px auto;
+        background-color: orange;
+    }
+</style>
+</head>
+<body id='body'>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div> 
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+</body>
+</html>
+<script>
+    let addContent = () => {
+        if(window.scrollY+window.innerHeight == body.getBoundingClientRect().height+20) { //20px = margin-top + margin-bottom 
+            let div = document.createElement('div');
+            div.classList.add('box');
+            body.appendChild(div);
+        }
+    }
+    document.addEventListener('scroll',addContent);
+</script>
