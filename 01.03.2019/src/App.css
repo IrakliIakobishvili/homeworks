@@ -1,0 +1,140 @@
+.news--list {
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column nowrap;
+  border: 1px solid black;
+}
+
+.news--title {
+  margin-bottom: 20px;
+  color: white;
+  background: seagreen;
+  padding: 5px 30px;
+}
+
+.newses {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.newses>* {
+  box-sizing: border-box;
+}
+
+.news--box {
+  width: 80%;
+  /* border: 2px dashed rgb(91, 199, 81); */
+  padding: 10px 30px;
+}
+
+.news--item {
+  background: #e2e2e2;
+  padding: 20px 10px;
+  margin-bottom: 10px;
+}
+
+article.news--item h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: seagreen;
+}
+
+article.news--item img {
+  float: left;
+  margin-right: 10px;
+  border: 7px solid white;
+}
+
+/*-----------------------------*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+.App {
+  padding-top: 100px;
+}
+
+.top-nav {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  background-color: #333;
+}
+
+.top-nav__list {
+  display: flex;
+}
+
+.top-nav__list__item {}
+
+.top-nav__list__item__link {
+  text-decoration: none;
+  padding: 20px 15px;
+  display: block;
+  color: #fff;
+}
+
+.top-nav__list__item__link:hover {
+  /* background-color: black !important; */
+}
+
+.active {
+  color: #fff;
+  background-color: #4CAF50;
+}
+
+.news, .index, .contact {
+  padding: 20px;
+}
+
+.main-heading {
+  text-align: center;
+  background-color: #008CBA;
+  padding: 10px;
+  color: #fff;
+  /* width: 95%; */
+  margin: auto;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.text {
+  text-align: justify;
+  margin-bottom: 30px;
+}
+
+.news-list {
+  /* display: flex; */
+  /* flex-direction: column; */
+  background-color: #f1f1f1;
+  /* display: inline-block; */
+  width: 300px;
+}
+
+ul.news-list li {
+  border-bottom: 7px solid white;
+}
+
+/* .news-list li:first-child a {
+  background-color: red;
+} */
+
+.vertical__list {
+  display: flex;
+  margin: 20px;
+}
+
+.news__list__item__link {
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+}
